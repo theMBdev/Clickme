@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>title</title>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">      
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>        
+        <div class="main">        
+      
+        <div class="btn-container">
+            <button id="btn" class="btn" >Click Me!</button>
+        </div>        
+
+        <div id="send" class="sent">SENT!</div> </div>
+                
+        <script>
+            document.getElementById("btn").addEventListener("click", function() {
+                document.getElementById("send").style.transform = "translate(" + 50 + "%," + -170 + "px)";
+                document.getElementById("send").style.color = "black";
+                document.getElementById("send").style.fontSize = "40px";
+                document.getElementById("send").style.left = "-50px";  
+                document.getElementById("btn").style.opacity = "1%";    
+            }) 
+        </script>        
+    </body>
+</html>
